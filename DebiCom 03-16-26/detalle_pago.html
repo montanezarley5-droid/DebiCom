@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Debicom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!--Estilos de Css-->
+    <link rel="stylesheet" href="CSS/style1.css">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+      <!--Vinculacion con JS-->
+    <script src="JS/Scripts.JS"></script>
+</head>
+<body>
+    <div class="card-box">
+        <form action="">
+            <h2>Detalle de Pago</h2>
+            <!--campo detalle pago-->
+            <div class="mb-3">
+                <label for="Metodo de Pago">Seleccione Metodo de Pago</label>
+                <div class="fila">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-piggy-bank"></i></span>
+                        <select name="metodo pago" id="metodo pago" class="form-control"> 
+                        <option value="seleccione Metodo de Pago">Seleccionar</option>
+                        <option value="Nequí">Nequí</option>
+                        <option value="Daviplata">Daviplata</option>
+                        <option value="BRE-B">BRE-B</option>
+                </select>
+                </div>
+            </div>
+        </div>
+
+            <div class="resumen-compra">
+                <h3>Resumen de Compra</h3>
+                <div class="detalle-compra">
+                    <span>Subtotal</span>   
+                    <span class="precio-final">$20,500</span>
+                </div>
+                <div class="detalle-compra">
+                    <span>iva</span>
+                    <span class="precio-final">$3,895</span>
+                </div>
+                <div class="detalle-compra total">
+                    <strong>Total</strong>
+                    <strong class="precio-final">$24,395</strong>
+                </div>
+            </div>
+
+            <button type="submit" class="boton-pago">Pagar Ahora</button>
+             <p class="text-center mt-3" style="font-size: 14px;">
+            <a href="Cancelar.html">Cancelar</a>
+        </p>
+        </form>
+    </div>
+</body>
+</html>

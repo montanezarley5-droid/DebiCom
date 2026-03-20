@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DebiCom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="JS/Scripts.JS"></script>
+</head>
+<body class="register">
+    
+    <div class="card-box-register">
+        <h3>Crea tu cuenta</h3>
+        <form action="">
+            
+            <!--Datos Personales-->
+            <div class="mb-3">
+                <label for="Nombre" class="form-label">Datos Personales</label>
+                <div class="fila">
+
+                    <!--Nombre-->
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Nombre" maxlength="30">
+                    </div> 
+
+                    <!--Apellido-->
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid  fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Apellido"maxlength="30">
+                    </div>
+                </div>
+            </div>
+
+            <!--Informacion del documento-->
+            <div class="mb-3">
+                <label for="Tipo documento" class="form-label">Tipo de documento</label>
+                <div class="fila">
+                    
+                <!--Seleccionar el tipo de documento-->
+                    <div class="input-group">
+                        <span class="input-group-text TipoDocumento"><i class="fa-solid fa-person"></i></span>
+                        <select name="Documento" id="documento" class="form-control">
+                        <option value="" disabled selected hidden>Tipo de documento</option>
+                        <option value="0" class="seleccionar">Cedula de ciudadania</option>
+                        <option value="1" class="seleccionar">Cedula de extranjeria</option>
+                        <option value="2" class="seleccionar">Pasaporte</option>
+                        </select>
+                    </div>
+
+                    <!--Ingresar el numero de documento-->
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-person"></i></span>
+                        <input type="number" class="form-control" placeholder="No.Documento" maxlength="10">
+                    </div>
+                </div>
+            </div>
+                
+            <!--Informacion de contacto-->
+            <div class="mb-3">
+                <label for="Contacto" class="form-label">Informacion de contacto</label>
+                <div class="fila">
+                    <!--correo Electronico-->
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                      <input type="email" class="form-control" placeholder="Correo Electronico" maxlength="30" id="Correo">
+                    </div>
+
+                    <!--Telefono-->
+                    <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                    <input type="number" class="form-control" placeholder="Telefono" maxlength="30" id="Telefono" step="0.01">
+                
+                    </div>
+                </div>
+            </div>
+
+            <!--CSeguridad-->
+            <div class="mb-3">
+                <label for="Seguridad" class="form-label">Seguridad</label>
+                <div class="input-group">
+                <!--Ingresar la contraseña-->
+                    <button type="button" class="input-group-text btn" onclick="mostrar_contra()"><i class="fa-solid fa-eye-slash" id="icon" ></i></button>
+                    <input type="password" class="form-control" placeholder="Tu Contraseña" maxlength="30" id="passw"> 
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="Contraseña" class="form-label">Confirmar Contraseña</label>
+                <div class="input-group">
+            <!--Confirmar la contraseña-->
+                    <button type="button" class="input-group-text btn" onclick="mostrar_confirmar()"><i class="fa-solid fa-eye-slash" id="iconC"></i></button>
+                    <input type="password" class="form-control" placeholder="Confirma tu Contraseña" maxlength="30" id="ConfirmPassword">
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-main">Registrarse</button>
+
+        </form>
+
+        <p class="text-center mt-3" style="font-size: 14px;">
+            ¿Ya tienes una cuenta? <a href="login.html">iniciar sesion</a>
+        </p>
+        
+
+    </div>
+</body>
+</html>
